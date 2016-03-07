@@ -3,8 +3,26 @@
     <script scr="dspUtils-11.js"></script>
     <script src="script.js"></script>
 </head>
+
 <body>
-    <button id="generate">Generate</button>
+    <div>
+        <button id="generate">Generate</button>
+    </div>
+    <br>
+    <div>
+        <span>Sampling Frequency (kHz): </span>
+        <input type="text" value="100" id="sample_freq"/>
+        <span>Samples (M): </span>
+        <input type="text" value="99" id="num_samples"/>
+    </div>
+    <br>
+    <div>
+        <span>Left Bound: </span>
+        <input type="text" id="left_bound" />
+        <span>Right Bound: </span>
+        <input type="text" id="right_bound" />
+    </div>
+    <br>
     <div id="results">
     </div>
 </body>
