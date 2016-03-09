@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $.getScript("dspUtils-11.js", function () {});
+//    $.getScript("dspUtils-11.js", function () {});
 
     $("#generate").click(function (e) {
         var Fs = $("#sample_freq").val();
@@ -11,7 +11,7 @@ $(document).ready(function () {
         var Fa = $("#right_bound").val();
         var Fb = $("#left_bound").val();
 
-        var coeffs_list = calcFilter(Fs * 1000, Fa * 1000, Fb * 1000, M, Att);
+        var coeffs_list = calcFilter(Fs * 1000, Fa, Fb, M, Att);
 
         var coeffs = coeffs_list.join(", ");
 
